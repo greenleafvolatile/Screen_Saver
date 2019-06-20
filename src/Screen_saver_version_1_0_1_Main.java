@@ -5,9 +5,6 @@ import java.awt.event.*;
 
 public class Screen_saver_version_1_0_1_Main extends JFrame {
 
-
-
-    private final static GraphicsDevice device=GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
     private final static int DEFAULT_FONT_STYLE=Font.PLAIN;
     private final static int DEFAULT_FONT_SIZE=12;
     private final static int BORDER_THICKNESS=2;
