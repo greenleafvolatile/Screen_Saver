@@ -401,6 +401,6 @@ public class Screen_saver_version_1_0_1_Main extends JFrame {
     }
 
     public static void main(String[] args){
-        SwingUtilities.invokeLater(() -> createAndShowGUI());
+        SwingUtilities.invokeLater(Screen_saver_version_1_0_1_Main::createAndShowGUI);
     }
 }
