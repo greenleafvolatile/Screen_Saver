@@ -54,7 +54,7 @@ public class Screen_saver_version_1_0_1_Main extends JFrame {
         addComponentListener();
         pack();
 
-        delay=10;
+        delay=50;
         timer=new Timer(delay, new TimerListener());
         timer.start();
 
