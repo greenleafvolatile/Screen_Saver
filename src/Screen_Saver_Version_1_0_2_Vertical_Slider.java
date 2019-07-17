@@ -25,7 +25,7 @@ public class Screen_Saver_Version_1_0_2_Vertical_Slider extends JFrame {
         slider.setMinorTickSpacing(2);
         slider.setMajorTickSpacing(10);
         slider.setPaintTicks(true);
-        //slider.setPaintLabels(true);
+        //slider.setPaintLabels(false);
         panel.add(slider);
         setContentPane(panel);
         pack();
