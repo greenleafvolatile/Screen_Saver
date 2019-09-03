@@ -29,7 +29,7 @@ public class Screen_Saver_Version_1_0_2_Frame extends JFrame {
     private Color backgroundColor;
     private Color foregroundColor;
 
-    private Screen_Saver_Version_1_0_2_Frame(){
+    public Screen_Saver_Version_1_0_2_Frame(){
         foregroundColor=DEFAULT_FG_COLOR;
         backgroundColor=DEFAULT_BG_COLOR;
         message=DEFAULT_MESSAGE;
@@ -352,12 +352,11 @@ public class Screen_Saver_Version_1_0_2_Frame extends JFrame {
         component.setVerticalMove(-component.getVerticalMove());
     }
 
-    private static void createAndShowGUI(){
+    public void createAndShowGUI(){
 
-        JFrame frame=new Screen_Saver_Version_1_0_2_Frame();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 
@@ -383,10 +382,5 @@ public class Screen_Saver_Version_1_0_2_Frame extends JFrame {
             }
             component.moveMessage();
         }
-    }
-
-
-    public static void main(String[] args){
-        SwingUtilities.invokeLater(() -> createAndShowGUI());
     }
 }
